@@ -40,7 +40,7 @@ cwd = os.getcwd()
 #
 ## Set variables for the filenames
 filename1 = "C:\GIS\ADWR\GWSI_ZIP\Data_Tables\GWSI_WW_LEVELS.xlsx"
-filename2 = "E:\GIS\ADWR\GWSI_ZIP\Data_Tables\GWSI_SITES.xlsx"
+filename2 = "C:\GIS\ADWR\GWSI_ZIP\Data_Tables\GWSI_SITES.xlsx"
 
 #
 ## Define a list of column names based on GWSI Protocol, to be used reading first txt file
