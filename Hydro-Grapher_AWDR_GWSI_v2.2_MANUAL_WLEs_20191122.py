@@ -4,6 +4,13 @@
 
 @author: Justin A. Clark
 
+Get the data here:
+https://new.azwater.gov/gis
+(click on the "Groundwater Site Inventory" link)
+
+or here:
+https://new.azwater.gov/sites/default/files/GWSI_ZIP_10182019_0.zip
+
 This program takes data from two excel files and a text file and creates graphs that stand alone as PNG files.
    The excel files contain water level data and well construction data from wells in ADWRs GWSI database.
    The PNG files generated are saved to the main "Path" Folder.
