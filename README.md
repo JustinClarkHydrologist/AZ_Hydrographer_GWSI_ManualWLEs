@@ -1,7 +1,5 @@
 # AZ_Hydrographer_GWSI_ManualWLEs
-Hydrograph Maker for GWSI Data Collected from Manual Depth to Water Measurements (Mostly with Sounders)
-
-Hydrograph Maker for GWSI Data Collected from Automated Sites (Transducers or Stevens Recorders).
+Hydrograph Maker for data from Manual Depth to Water measurements from groundwater wells in Arizona. Measurements collected with sounders as part of GWSI program.
 
 Program Author: Justin Clark
 
@@ -15,7 +13,7 @@ Contributors: James Dieckhoff, Michael Giansiracusa (michaeltg12@gmail.com)
 
 -This program includes a for loop to make all the PNG files.
 
--This version (version 1.2) is a clean version that just makes PNG files and a CSV file.
+-This version (version 2.3) is a clean version that just makes PNG files and a CSV file.
 
 -Pandas and matplotlib are the primary libraries used for this program.
 
