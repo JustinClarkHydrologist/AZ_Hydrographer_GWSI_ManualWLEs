@@ -18,3 +18,6 @@ Contributors: James Dieckhoff and Michael T. Giansiracusa (michaeltg12@gmail.com
 -Pandas and matplotlib are the primary libraries used for this program.
 
 -Designed for use by Arizona Department of Water Resources (ADWR) Groundwater Flow and Transport Modelers to Process the input data for MODFLOW Models and PEST Calibration Runs.
+
+All data referenced can be downloaded here:
+https://new.azwater.gov/sites/default/files/GWSI_ZIP_10182019.zip
