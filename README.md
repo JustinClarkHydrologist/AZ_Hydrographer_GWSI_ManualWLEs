@@ -3,7 +3,7 @@ Hydrograph Maker for data from Manual Depth to Water measurements from groundwat
 
 Program Author: Justin Clark
 
-Contributors: James Dieckhoff, Michael Giansiracusa (michaeltg12@gmail.com)
+Contributors: James Dieckhoff and Michael T. Giansiracusa (michaeltg12@gmail.com)
 
 -This program takes data from 2 excel files and creates graphs that stand alone as PNG files.
 
