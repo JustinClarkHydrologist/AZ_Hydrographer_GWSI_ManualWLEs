@@ -142,7 +142,7 @@ for location in wells:
 
         plt.show()
 
-        outname = str('Hydrographs_GWSI_') + str(location) + str('__Transducer.png')
+        outname = str('Hydrographs_GWSI_Manual__') + str(location) + str('.png')
         fig.savefig(outname, dpi = 400, bbox_inches='tight', pad_inches=.1)
 
 ##############################################################################
