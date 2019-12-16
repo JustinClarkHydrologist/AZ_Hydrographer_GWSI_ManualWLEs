@@ -13,8 +13,8 @@ Contributors: James Dieckhoff and Michael T. Giansiracusa (michaeltg12@gmail.com
 
 -This program includes a for loop to make all the PNG files.
 
--This version (version 2.3) is a clean version that just makes PNG files and a CSV file.
+-This version (version 2.6) is a clean version that just makes PNG files with simple styling.
 
 -Pandas and matplotlib are the primary libraries used for this program.
 
-Designed for use by Arizona Department of Water Resources (ADWR) Groundwater Flow and Transport Modelers to Process the input data for MODFLOW Models and PEST Calibration Runs.
+-Designed for use by Arizona Department of Water Resources (ADWR) Groundwater Flow and Transport Modelers to Process the input data for MODFLOW Models and PEST Calibration Runs.
