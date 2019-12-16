@@ -3,6 +3,7 @@
              Last Updated 12/16/2019 (Dec. 16 2019, I am American)
 
 @author: Justin A. Clark
+@contibutor(s): Michael T. Giansiracusa
 
 This program takes data from two excel files and creates graphs that stand alone as PNG files.
    The first excel file contain depth to water data collected from manually sampled wells in ADWR's GWSI database.
@@ -161,124 +162,14 @@ for location in wells:
 #zf = zipfile.ZipFile('C:\GIS\ADWR\GWSI_ZIP_10182019_0.zip') # having First.csv zipped file.
 #df5 = pd.read_csv(zf.open('GWSI_ZIP_10182019/Data_Tables/GWSI_TRANSDUCER_LEVELS.txt'))
 
-
-    ##THIS FIRST SECTION MAKES THE WELL SPECIFIC DATAFRAME, outdated
-    df3 = df.loc[df[col] == location].copy().sort_values('Date')
-
-    ##CALCULATE THE ELAPSED YEARS
-    df4 = (df3['Date'][len(df3['Date'])] - df3['Date'][0]).days / 365.25
-
-    total_years = (df4['Date'].iloc[len(df4['Date'])-1] - df4['Date'].iloc[0]).days / 365
-
-
-
-##subset2
-t_wells = list([314408111034701, 314406111033701, 314201111023901, 314309111031601, 314230111025701, 314257111033401, 314338111033101, 314436111015001, 314448111023301, 314201111033701, 313836111033001, 313958111023301, 
-313820111033301, 313414111100501, 314116111033701, 314230111034501, 314148111030001, 314044111033201, 314411111031001, 314222111025601, 314117111033801, 313920111033301, 314024111030201, 314421111003701, 
-314200111023701, 313856111034401, 314258111054501, 314353111001201, 314229111030301, 314015111033401, 314427111023501, 313959111032401, 313851110012303, 314401111031801, 314248111033801, 314357111020301, 
-314249111033901, 314347111041101, 314402111025101, 313940111030901, 314446111022801, 314416111015901, 314341111034201, 314224111035401, 314342111025401, 314156111030301, 314058111034301, 314028111042601, 
-314359111033701, 314242111025201, 314242111023901, 314335111025001, 314434111025501, 313851111012201, 313915111052001, 314202111034001, 314058111031001, 314336111034101, 314251111045401, 313859111023901, 
-314300111060901, 314435111025601, 314148111055101, 313939111032401, 314256111044601, 313832111022801, 314029111023301, 314334111030601, 314302111052901, 314312111030601, 314157111003701, 314150111031701, 
-314008111033501, 313849111030001, 314303111032801, 314413111030001, 314214111025601, 314454111023701, 313845111023101])
-
-
-
-
-##
 ###SET GRAPH STYLE, FORMATTING
 #import seaborn as sns
 #sns.set_style("darkgrid")
-
-import datetime
-Time_Start = datetime.datetime.now()
-Time_End = datetime.datetime.now()
-Run_Time = Time_End - Time_Start
-
-
-#
-#Find kernel's current directory, update to desired location if necessary
-import os
-Path = r"C:\GIS\ADWR\PythonOutput"
-Path = r"C:\GIS\ADWR\GWSI_ZIP\Data_Tables"
-os.chdir(Path)
-cwd = os.getcwd()
-
-outname = str('GWSI_WLE_ZipExtract_LOCATIONS__Raw_Data_Table.csv')
-df2.to_csv(outname, index=False)
-
-outname = str('GWSI_WLE_ZipExtract_OBSERVATIONS__Raw_Data_Table.csv')
-df3.to_csv(outname, index=False)
-
-max_datetime_4fig = max_datetime_4fig.to_pydatetime()
-
-
-#    df4 = df3.loc[df3[col]==location]
-#    df4 = df4.sort_values('Date')
-
-#        ax1.plot(x, y1, xticks=df2.index)#TEST
-
-#        ax2.plot(x, y2, scalex = xrange, 'b-')
-
-
-outname = str('GWSI_WLE_ZipExtract_CountLoc.csv')
-df_wells.to_csv(outname, index=False)
 """
 ###############################################################################
 #  ### ### ### ### ### #### ### ### ### ### ### #### ### ### ### ### ### ###  #
 ##   Websites Visited   ##
 """
-"""
-remove_me = set([331306111074301,315628110430201])
-wells = list(set(df4[GWSI_ID].astype('int64')) - remove_me)
-
-
-outname = str('GWSI_WLE_ZipExtract__TucsonAMA_6089wells.csv')
-df4.to_csv(outname, index=False)
-
-print(wells)
-
-for element in wells:
-     print(type(element))
-
-location = int(315628110430201)
-
-
-csv_name = "GWSI_WLE_ZipExtract__TucsonAMA_4557wells.csv"
-df5 = pd.read_csv(csv_name, names = "S", index_col = None, header = None)
-
-
-remove_me = set([331306111074301,314401111031801])
-wells = list(set(df5['S']) - remove_me)
-
-
-
-
-
-
-
-#errors = list([343317111504901, 315110110134301])
-#wells.remove(errors)
-
-##subset1
-#wells = ([313845111023101,313851111012201,313920111033301,313958111023301,314015111033401,314148111055101,314150111031701])
-#
-#wells = ([313920111033301,314015111033401])
-
-
-
-
-
-
-location = 312038110510101
-
-location = 312057110552701
-
-location = 312050110504501
-
-SITE_WELL_REG_ID
-print(df2)
-
-
 
 bad_wells = [
 322148111171701,321632110543201,321518110442101,322228110590601,324923111260901,315451110573001,320522110534701,320802110555201,320522110534701,321553110533201,323144110523501,
@@ -294,40 +185,6 @@ bad_wells = [
 321119110593601,315304110570701,323213110590701,322125111180601,321235110510001,313002110483901,321639111015901,320053111045601,321816111005401,321552110534401,315811111042901,
 315811111042901,321021111140301,323332111143701,312445110571901]
 
-wells = wells - set(bad_wells)
-
-###
-
-
-
-wells = list(set(df5['S']))
-skiplines = 4176-19 ##Files in folder - 19
-wells = list(set(df5['S']) - set(bad_wells))
-
-wells = wells[skiplines:]
-
-
-
-
-bad_df = pd.DataFrame(bad_wells)
-outname = str('BadWells__GWSI_WLE_ZipExtract_20191205_2PM.csv')
-bad_df.to_csv(outname, index=False)
-
-wells_df = pd.DataFrame(wells)
-outname = str('Wells_Good__GWSI_WLE_ZipExtract_20191206.csv')
-wells_df.to_csv(outname, index=False)
-
-320522110534701 or 32052211053470
-
-#     outname = str('GWSI_WLE_ZipExtract_SCAMAbc_') + str(location) + str('__Raw_Data_Table.csv')
-#     df3.to_csv(outname, index=False)
-
-
-
-
-
 outname = str('TestOut_DataFrame_20191216.csv')
 df4.to_csv(outname, index=False)
-
-
-
+"""
